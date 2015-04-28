@@ -1,0 +1,90 @@
+/****
+Prototype Note Styles
+Authored by Robbie Manson
+Last edited by Paddy Duke
+15/08/2014
+*/
+
+.prototype_note {
+  background: rgba(255, 216, 79, 0.95);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0ffd84f', endColorstr='#f0ffd84f');
+  bottom: 0;
+  color: #525252;
+  font-size: 13px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  left: 3em;
+  line-height: 130%;
+  /*min-height: 5em;*/
+  padding: 1.25em 1.5em 0 1.5em;
+  position: fixed;
+  text-shadow: none;
+  width: 30em;
+  z-index: 9999;
+  cursor:pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.prototype_note ol,
+.prototype_note ul,
+.prototype_note p {
+  margin-bottom: 0;
+  padding-bottom: 2em;
+}
+
+.prototype_note p.flush {
+  padding-bottom: 0.5em;
+}
+
+.prototype_note li {
+  margin-bottom: 0.5em;
+}
+
+.prototype_note li:last-child {
+  margin-bottom: 0;
+}
+
+.prototype_note h3,
+#footer .prototype_note h3 {
+  margin: 0 0 1em 0;
+  text-shadow: none;
+  background: url(prototype_notes_up.svg) 100% 70% no-repeat;
+  background-size: 15px 7px;
+}
+
+h3.open {
+  background-image: url(prototype_notes_down.svg);
+}
+
+.prototype_note:hover {
+  padding-bottom: 0.5em;
+}
+
+.prototype_note_content {
+  display: none;
+}
+
+/* NEXT LINK */
+
+.prototype_linked {
+  bottom: 0;
+  right: 3em;
+  position: fixed;
+}
+.prototype_linked a {
+  background: #f5cf4d;
+  color: #525252;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 100%;
+  padding: 1.1em 1.25em;
+  margin: 0 0 0 2px;
+  text-shadow: none;
+  width: 30em;
+  z-index: 9999;
+  cursor:pointer;
+  float: left;
+  width: auto;
+}

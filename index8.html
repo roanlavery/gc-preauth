@@ -1,0 +1,767 @@
+<!DOCTYPE html><!--[if lt IE 7]>
+<html lang="en" class="ie ie6">
+  <![endif]--><!--[if IE 7]>
+  <html xmlns:v="urn:schemas-microsoft-com:vml" lang="en" class="ie ie7">
+    <![endif]--><!--[if IE 8]>
+    <html xmlns:v="urn:schemas-microsoft-com:vml" lang="en" class="ie ie8">
+      <![endif]--><!--[if IE 9]>
+      <html lang="en" class="ie ie9">
+        <![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
+        <html lang="en">
+          <!--<![endif]-->
+          <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta name="robots" content="noindex, nofollow" />
+            <meta name="git-rev" content="380c71"/>
+            <meta name="host" content="web3-gc" />
+            <meta content="SP-1112-01" name="tracker-key" />
+            <meta content="MediaNode" name="tracker-odn" />
+            <meta content="85646" name="tracker-o" />
+            <meta content="336195" name="tracker-u" />
+            <title>FreeAgent : New Invoice</title>
+            <link rel="Shortcut Icon" type="image/ico" href="/favicon.ico" />
+            <meta content="authenticity_token" name="csrf-param" />
+            <meta content="bIoGO5bCpkXpKgIa2udyK/FSNB1z1KZMqmmFD+QdEjQ=" name="csrf-token" />
+            <meta content="GBP" name="native-currency" />
+            <meta content="£" name="native-currency-unit" />
+            <meta content="." name="native-currency-separator" />
+            <meta content="," name="native-currency-delimiter" />
+            <meta content="%u%n" name="native-currency-format" />
+            <meta content="5MB" name="max-attachment-size-name" />
+            <meta content="2013-04-01" name="freeagent-start-date" />
+            <link href="https://staticly.global.ssl.fastly.net/assets/talaria-eb3944f9e08da3cf21d3d69369c2017f.css" media="all" rel="stylesheet" type="text/css" />
+            <link href="https://staticly.global.ssl.fastly.net/assets/talaria2-abb4014a6930c7e0e5f8fc11e7af6795.css" media="all" rel="stylesheet" type="text/css" />
+            <link href="https://staticly.global.ssl.fastly.net/assets/talaria_enhancements-019c95bf0df50f878184d28ef24272e0.css" media="all" rel="stylesheet" type="text/css" />
+            <link href="https://staticly.global.ssl.fastly.net/assets/reports_print-1d941f032aaa1e7ecf31b2e745c7eb92.css" media="print" rel="stylesheet" type="text/css" />
+            <!--[if IE]>
+            <link href="https://staticly.global.ssl.fastly.net/assets/talaria/ie-fda58def5914cbe67732cbbe541cec09.css" media="screen" rel="stylesheet" type="text/css" />
+            <![endif]--><!--[if lt IE 9]><script src="https://staticly.global.ssl.fastly.net/assets/html5-5be67f5eeb052b5737c7f57577fdf13f.js" type="text/javascript"></script><![endif]--><script src="https://staticly.global.ssl.fastly.net/assets/talaria-34715abc9f43c9cbac265bda30ccba99.js" type="text/javascript"></script><script src="https://staticly.global.ssl.fastly.net/assets/talaria/highcharts-1b1911eaeac4103e8eedcb7846507116.js" type="text/javascript"></script>
+          </head>
+          <body class="">
+            <div id="wrapper">
+              <div id="sidebar_saviour"></div>
+              <div class="app_header_wrapper">
+                <header class="app_header" role="banner">
+                  <div class="app_header_contents">
+                    <div class="app_header_company_name"><a href="/">MediaNode</a></div>
+                    <nav id='primary_nav' role='navigation'>
+                      <ul class='sf-menu'>
+                        <li class="alpha"><a href="/">Overview</a></li>
+                        <li><a href="/contacts">Contacts</a></li>
+                        <li class="parent current" id="work">
+                          <a href="/projects"><em>Work</em></a>
+                          <ul>
+                            <li><a href="/estimates">Estimates</a></li>
+                            <li><a href="/projects">Projects</a></li>
+                            <li><a href="/timeslips">Time Tracking</a></li>
+                            <li class="omega"><a href="/invoices">Invoicing</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="/bills">Bills</a></li>
+                        <li class="parent" id="my_money">
+                          <a href="/users/336195/expenses"><em>My Money</em></a>
+                          <ul>
+                            <li><a href="/users/336195/expenses">Expenses</a></li>
+                            <li><a href="/my_money/336195/dividends">Dividends</a></li>
+                            <li><a href="/my_money/336195/salary">Salary</a></li>
+                            <li class="omega"><a href="/payroll/2016/overview">Payroll</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="/bank_accounts">Banking</a></li>
+                        <li class="parent" id="taxes">
+                          <a href="/tax/336195/self_assessment_returns"><em>Taxes</em></a>
+                          <ul>
+                            <li><a href="/tax/336195/self_assessment_returns">Self Assessment</a></li>
+                            <li><a href="/tax/corporation_tax_returns">Corporation Tax</a></li>
+                            <li><a href="/tax/paye">PAYE &amp; NI</a></li>
+                            <li class="omega"><a href="/tax/vat_returns">VAT</a></li>
+                          </ul>
+                        </li>
+                        <li class="parent last-child" id="accounting">
+                          <a href="/accounting"><em>Accounting</em></a>
+                          <ul>
+                            <li><a href="/accounting">Reports</a></li>
+                            <li class="omega"><a href="/accounting/journal_sets">Journal Entries</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="account_navigation js-account_navigation" role='navigation'>
+                      <ul class="account_navigation_menu">
+                        <li class="account_navigation_menu_item" id="search-control">
+                          <form accept-charset="UTF-8" action="/search" class="header_search" method="get">
+                            <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                            <input id="search-box" name="query" tabindex="1" type="text" /><label for="search-box">Search</label>
+                          </form>
+                        </li>
+                        <li class="account_navigation_menu_item dropdown_menu js-dropdown_expand_on_hover">
+                          <label class="dropdown_menu_title">Josh</label>
+                          <ul class="dropdown_menu_contents">
+                            <li class="dropdown_menu_option settings"><a href="/settings/index">Settings</a></li>
+                            <li class="dropdown_menu_option files"><a href="/files">Files</a></li>
+                            <li class="dropdown_menu_option billing"><a href="/company/account">Billing</a></li>
+                            <li class="dropdown_menu_option logout"><a href="/logout">Logout</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <nav id="secondary_nav" role="navigation">
+            <div id="secondary_nav_content">
+  <ul>
+    <li id="estimates"><a href="/estimates">Estimates</a></li>
+    <li id="projects"><a href="/projects">Projects</a></li>
+      <li id="time_tracking"><a href="/timeslips">Time Tracking</a></li>
+    <li id="invoices"><a href="/invoices">Invoices</a></li>
+    <li class="active" id="recurring_invoices"><a href="/invoices/recurring">Recurring Invoices</a></li>
+  </ul>
+</div>
+
+</nav></header>    </div>
+    <section id="main" role="main" data-pjax-container="true">
+      <header id="main_title">
+        <div id="main_title_content">
+          <div id="main_title_innards">
+
+              <h1>
+                New Recurring Profile
+              </h1>
+          </div>
+        </div>
+      </header>
+
+<section id="content">
+  <div id="contents">
+    <form accept-charset="UTF-8" action="index9.html" class="new_invoice" id="invoice_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="C0FaakfGGZ/pwy4kaomAXSrnjVyJUr3cfVU2xS2rpq8=" /></div>
+
+
+<fieldset class="blockf">
+  <p class="required_note">
+    Fields marked with <strong class="required">*</strong> are required.
+  </p>
+  <h2>Contact and Project Details</h2>
+
+
+
+
+
+    <div id="existing_contact" style="">
+      <p>
+        <label for="invoice_contact_id">Contact</label>
+        <select id="invoice_contact_id" name="invoice[contact_id]"><option value="3467316" selected="selected">aaandrew</option>
+<option value="" disabled="true">--------</option>
+<option value="3379881">ACME</option>
+<option value="3428256">Mark Cavendish</option>
+<option value="3370206">Chelsea FC</option>
+<option value="3386890">Donaldson Ltd</option>
+<option value="3356199">Fez Consulting Ltd</option>
+<option value="3356203">Gracie Printing Ltd</option>
+<option value="3356208">Wayne Lewis</option>
+<option value="3356206">Life Plan Counselling</option>
+<option value="3356202">Luxury Laundry</option>
+<option value="3356210">Mad Stacks</option>
+<option value="3356198">Pashton Electrials</option>
+<option value="3356195">Q6 carwash</option>
+<option value="3486424">Danae shel</option>
+<option value="3356200">Stamp &amp; Co Letting Agents</option>
+<option value="3356207">STM Auto Parts</option>
+<option value="3356205">Strachan Meyers</option>
+<option value="3356209">Twin Food Stores</option>
+<option value="3356196">Typewerks</option>
+<option value="3356204">Walker Forbes</option>
+<option value="3356197">Winston Fair &amp; Sons</option>
+<option value="3356201">Witness Fitness</option></select>
+          <span class="form-info-s">or</span>
+          <a href="/contacts/new" class="nonudge" id="add_contact">Add a new contact</a>
+      </p>
+    </div>
+    <div id="new_contact" style="display:none;">
+      <div id="new_contact">
+
+    <input disabled="disabled" id="invoice_new_contact_attributes_company_id" name="invoice[new_contact_attributes][company_id]" type="hidden" value="85646" />
+    <input disabled="disabled" id="invoice_new_contact_attributes_country" name="invoice[new_contact_attributes][country]" type="hidden" value="United Kingdom" />
+    <p class="full_width">
+      <label for="invoice_contact_first_name">Contact First Name <strong class="required">*</strong></label>
+      <input data-focus="true" disabled="disabled" id="invoice_new_contact_attributes_first_name" name="invoice[new_contact_attributes][first_name]" size="30" type="text" />
+    </p>
+
+    <p class="full_width">
+      <label for="invoice_contact_last_name">Contact Last Name <strong class="required">*</strong></label>
+      <input disabled="disabled" id="invoice_new_contact_attributes_last_name" name="invoice[new_contact_attributes][last_name]" size="30" type="text" />
+      <span class="form-info">First Name and Last Name are required if Organization is blank</span>
+    </p>
+
+    <p class="full_width">
+      <label for="invoice_contact_organisastion_name">Contact Organization <strong class="required">*</strong></label>
+      <input disabled="disabled" id="invoice_new_contact_attributes_organisation_name" name="invoice[new_contact_attributes][organisation_name]" size="30" type="text" />
+      <span class="form-info">Organization is required if First Name and Last Name are blank</span>
+    </p>
+
+      <p>
+        <label for="invoice_contact_uses_contact_invoice_sequence">Contact-level Invoice Sequence?</label>
+        <input disabled="disabled" name="invoice[new_contact_attributes][uses_contact_invoice_sequence]" type="hidden" value="0" /><input disabled="disabled" id="invoice_new_contact_attributes_uses_contact_invoice_sequence" name="invoice[new_contact_attributes][uses_contact_invoice_sequence]" type="checkbox" value="1" />
+      </p>
+
+      <p id="cancel_add_contact">
+        <span class="form-info-s">or</span>
+        <a href="#" class="nonudge" id="use_existing_contact">Use an existing contact</a>
+      </p>
+</div>
+
+    </div>
+
+    <div id="invoice_project_details">
+      <p>
+        <label for="invoice_project_id">Project</label>
+        <select data-invoice-id="" id="invoice_project_id" name="invoice[project_id]"><option value="">-- No Project --</option></select>
+      </p>
+    </div>
+</fieldset>
+
+<fieldset class="blockf">
+  <h2>Invoice Details</h2>
+  <p>
+    <label for="invoice_reference">Starting Reference</label>
+    <span id="invoice_reference_span"><input id="invoice_reference" name="invoice[reference]" size="30" type="text" value="INV1401" /></span>
+    <span class="form-info" id="invoice_sequencing_span">Using Global invoice sequencing</span>
+    <span class="form-info">The next available reference in this sequence will be chosen</span>
+  </p>
+
+  <p>
+    <label for="invoice_dated_on">Start Date <strong class="required">*</strong></label>
+    <input data-date-format="%d %b %y" data-role="calendar" id="invoice_dated_on" name="invoice[dated_on]" size="12" type="text" value="24 Apr 15" /><span class="form-info">(dd mmm yy)</span><span class="form-info">The date on which the first invoice will be created by this profile</span>
+  </p>
+
+  <p>
+    <label for="invoice_recurring">Frequency</label>
+    <select id="frequency" name="invoice[frequency]"><option value="Weekly">Weekly</option>
+<option value="Two Weekly">Two Weekly</option>
+<option value="Four Weekly">Four Weekly</option>
+<option value="Monthly">Monthly</option>
+<option value="Two Monthly">Two Monthly</option>
+<option value="Quarterly">Quarterly</option>
+<option value="Biannually">Biannually</option>
+<option value="Annually">Annually</option>
+<option value="2-Yearly">2-Yearly</option></select>
+    <span id="recurring_end_date">until <input data-date-format="%d %b %y" data-role="calendar" id="invoice_recurring_end_date" name="invoice[recurring_end_date]" no_label="true" size="12" type="text" /></span>
+    <span class="form-info">Leave the end date blank to recur forever</span>
+  </p>
+
+  <p>
+    <label for="invoice_payment_terms_in_days">Payment Terms <strong class="required">*</strong></label>
+    <input id="invoice_payment_terms_in_days" name="invoice[payment_terms_in_days]" size="3" type="text" value="30" /> days
+    <span class="form-info">Set to zero to display 'Due on Receipt' on the invoice</span>
+  </p>
+
+  <p>
+    <label for="invoice_currency">Currency</label>
+    <select id="invoice_currency" name="invoice[currency]"><option value="GBP" selected="selected" data-symbol="£">Pounds Sterling</option>
+<option value="EUR" data-symbol="€">Euro</option>
+<option value="USD" data-symbol="$">US Dollar</option>
+<option value="CAD" data-symbol="$">Canadian Dollar</option>
+<option value="NZD" data-symbol="$">New Zealand Dollar</option>
+<option value="AUD" data-symbol="$">Australian Dollar</option>
+<option value="--------------" disabled="disabled">--------------</option><option value="AOA" data-symbol="Kz">Angolan Kwanza</option>
+<option value="ARS" data-symbol="$">Argentine Peso</option>
+<option value="AMD" data-symbol="AMD">Armenian Dram</option>
+<option value="AWG" data-symbol="Afl.">Aruban Florin</option>
+<option value="AUD" data-symbol="$">Australian Dollar</option>
+<option value="AZN" data-symbol="AZN">Azerbaijani Manat</option>
+<option value="BSD" data-symbol="$">Bahamian Dollar</option>
+<option value="BDT" data-symbol="Tk">Bangladeshi Taka</option>
+<option value="BBD" data-symbol="$">Barbadian Dollar</option>
+<option value="BOB" data-symbol="Bs">Bolivian Boliviano</option>
+<option value="BWP" data-symbol="P">Botswana Pula</option>
+<option value="BRL" data-symbol="R$">Brazil Real</option>
+<option value="BGN" data-symbol="BGN">Bulgarian Lev</option>
+<option value="CAD" data-symbol="$">Canadian Dollar</option>
+<option value="KYD" data-symbol="$">Caymanian Dollar</option>
+<option value="XAF" data-symbol="XAF">Central African CFA Franc</option>
+<option value="CLP" data-symbol="$">Chilean Peso</option>
+<option value="CNY" data-symbol="¥">Chinese Yuan</option>
+<option value="COP" data-symbol="$">Colombian Peso</option>
+<option value="CRC" data-symbol="CRC">Costa Rican Colones</option>
+<option value="HRK" data-symbol="HRK">Croatian Kuna</option>
+<option value="CUC" data-symbol="CUC$">Cuban Convertible Peso</option>
+<option value="CUP" data-symbol="$">Cuban Peso</option>
+<option value="CZK" data-symbol="Kč">Czech Koruna</option>
+<option value="DKK" data-symbol="kr">Danish Kroner</option>
+<option value="DOP" data-symbol="$">Dominican Peso</option>
+<option value="XCD" data-symbol="$">East Carribean Dollar</option>
+<option value="EGP" data-symbol="LE">Egyptian Pound</option>
+<option value="EUR" data-symbol="€">Euro</option>
+<option value="FJD" data-symbol="$">Fijian Dollar</option>
+<option value="GEL" data-symbol="GEL">Georgian Lari</option>
+<option value="GHS" data-symbol="GHS">Ghanaian Cedi</option>
+<option value="GTQ" data-symbol="GTQ">Guatemalan Quetzales</option>
+<option value="GYD" data-symbol="G$">Guyanese Dollar</option>
+<option value="HNL" data-symbol="L">Honduran Lempira</option>
+<option value="HKD" data-symbol="$">Hong Kong Dollar</option>
+<option value="HUF" data-symbol="Ft">Hungarian Forint</option>
+<option value="ISK" data-symbol="kr.">Icelandic Króna</option>
+<option value="INR" data-symbol="Rs.">Indian Rupee</option>
+<option value="IDR" data-symbol="Rp">Indonesian Rupiah</option>
+<option value="ILS" data-symbol="ILS">Israeli Sheckels</option>
+<option value="JMD" data-symbol="$">Jamaican Dollar</option>
+<option value="JPY" data-symbol="¥">Japanese Yen</option>
+<option value="JOD" data-symbol="JOD">Jordanian Dinar</option>
+<option value="KZT" data-symbol="KZT">Kazakhstani Tenge</option>
+<option value="KES" data-symbol="KSh">Kenyan Shilling</option>
+<option value="KWD" data-symbol="KD">Kuwaiti Dinar</option>
+<option value="LAK" data-symbol="LAK">Lao Kip</option>
+<option value="LVL" data-symbol="Ls">Latvian Lats</option>
+<option value="LBP" data-symbol="LBP">Lebanese Pound</option>
+<option value="LTL" data-symbol="Lt">Lithuanian Lita</option>
+<option value="MGA" data-symbol="Ar">Malagasy Ariary</option>
+<option value="MWK" data-symbol="MK">Malawian Kwacha</option>
+<option value="MYR" data-symbol="RM">Malaysian Ringgit</option>
+<option value="MVR" data-symbol="Rf">Maldivian Rufiyaa</option>
+<option value="MUR" data-symbol="R">Mauritian Rupee</option>
+<option value="MXN" data-symbol="$">Mexican Peso</option>
+<option value="MDL" data-symbol="MDL">Moldovan Leu</option>
+<option value="MAD" data-symbol="MAD">Moroccan Dirham</option>
+<option value="MZN" data-symbol="MTn">Mozambican Metical</option>
+<option value="NAD" data-symbol="N$">Namibian Dollar</option>
+<option value="NPR" data-symbol="Rs">Nepalese Rupees</option>
+<option value="TWD" data-symbol="NT$">New Taiwan Dollar</option>
+<option value="NZD" data-symbol="$">New Zealand Dollar</option>
+<option value="NGN" data-symbol="N">Nigerian Naira</option>
+<option value="NOK" data-symbol="kr">Norwegian Kroner</option>
+<option value="OMR" data-symbol="OMR">Omani Rial</option>
+<option value="PKR" data-symbol="Rs.">Pakistani Rupee</option>
+<option value="PEN" data-symbol="S/.">Peruvian Nuevo Sol</option>
+<option value="PHP" data-symbol="PHP">Philippine Peso</option>
+<option value="PLN" data-symbol="zl">Polish Złoty</option>
+<option value="GBP" data-symbol="£">Pounds Sterling</option>
+<option value="QAR" data-symbol="QR">Qatari Riyal</option>
+<option value="RON" data-symbol="RON">Romanian New Leu</option>
+<option value="RUB" data-symbol="RUB">Russian Rouble</option>
+<option value="RWF" data-symbol="FRw">Rwandan Franc</option>
+<option value="SAR" data-symbol="SR">Saudi Riyal</option>
+<option value="RSD" data-symbol="RSD">Serbian Dinar</option>
+<option value="SCR" data-symbol="SR">Seychelles Rupee</option>
+<option value="SGD" data-symbol="$">Singapore Dollar</option>
+<option value="ZAR" data-symbol="R">South African Rand</option>
+<option value="KRW" data-symbol="KRW">South Korean Won</option>
+<option value="LKR" data-symbol="Rs">Sri Lankan Rupee</option>
+<option value="SEK" data-symbol="kr">Swedish Kronor</option>
+<option value="CHF" data-symbol="CHF">Swiss Franc</option>
+<option value="TZS" data-symbol="TZS">Tanzanian Shilling</option>
+<option value="THB" data-symbol="THB">Thai Baht</option>
+<option value="TTD" data-symbol="$">Trinidad and Tobago Dollar</option>
+<option value="TND" data-symbol="DT">Tunisian Dinar</option>
+<option value="TRY" data-symbol="TL">Turkish Lira</option>
+<option value="USD" data-symbol="$">US Dollar</option>
+<option value="UGX" data-symbol="USh">Ugandan Shilling</option>
+<option value="UAH" data-symbol="UAH">Ukrainian Hryvnia</option>
+<option value="AED" data-symbol="AED">United Arab Emirates Dirham</option>
+<option value="UYU" data-symbol="$">Uruguayan Peso</option>
+<option value="VUV" data-symbol="VT">Vanuatu Vatu</option>
+<option value="VEF" data-symbol="Bs. F">Venezuelan Bolívar</option>
+<option value="VND" data-symbol="₫">Vietnamese đồng</option>
+<option value="XOF" data-symbol="XOF">West African CFA Franc</option>
+<option value="ZMW" data-symbol="ZK">Zambian Kwacha</option></select>
+  </p>
+
+    <p>
+  <label id="online_payment">Online payment options</label>
+  <ul class="form_list">
+      <li>
+      <input name="invoice[payment_methods_attributes[gocardless]]" type="hidden" value="0" />
+      <input  id="payment_methods_gocardless" name="invoice[payment_methods_attributes[gocardless]]" type="checkbox" value="1" />
+        <label for="payment_methods_gocardless" class="wrap">GoCardless: one-off payment <span id='gocardless_checkbox_error'></span></label>
+      </li>
+      <li> <input checked="checked" id="payment_methods_gocardless" name="invoice[payment_methods_attributes[gocardless]]" type="checkbox" value="1" /> <label class="wrap">GoCardless: automatically take payment using Direct Debit mandate (£1250 per month)</li>
+      <li>
+      <input name="invoice[payment_methods_attributes[stripe]]" type="hidden" value="0" />
+      <input  data-currencies="[&quot;USD&quot;, &quot;AED&quot;, &quot;AFN&quot;, &quot;ALL&quot;, &quot;AMD&quot;, &quot;ANG&quot;, &quot;AOA&quot;, &quot;ARS&quot;, &quot;AUD&quot;, &quot;AWG&quot;, &quot;AZN&quot;, &quot;BAM&quot;, &quot;BBD&quot;, &quot;BDT&quot;, &quot;BGN&quot;, &quot;BIF&quot;, &quot;BMD&quot;, &quot;BND&quot;, &quot;BOB&quot;, &quot;BRL&quot;, &quot;BSD&quot;, &quot;BWP&quot;, &quot;BZD&quot;, &quot;CAD&quot;, &quot;CDF&quot;, &quot;CHF&quot;, &quot;CLP&quot;, &quot;CNY&quot;, &quot;COP&quot;, &quot;CRC&quot;, &quot;CVE&quot;, &quot;CZK&quot;, &quot;DJF&quot;, &quot;DKK&quot;, &quot;DOP&quot;, &quot;DZD&quot;, &quot;EEK&quot;, &quot;EGP&quot;, &quot;ETB&quot;, &quot;EUR&quot;, &quot;FJD&quot;, &quot;FKP&quot;, &quot;GBP&quot;, &quot;GEL&quot;, &quot;GIP&quot;, &quot;GMD&quot;, &quot;GNF&quot;, &quot;GTQ&quot;, &quot;GYD&quot;, &quot;HKD&quot;, &quot;HNL&quot;, &quot;HRK&quot;, &quot;HTG&quot;, &quot;HUF&quot;, &quot;IDR&quot;, &quot;ILS&quot;, &quot;INR&quot;, &quot;ISK&quot;, &quot;JMD&quot;, &quot;JPY&quot;, &quot;KES&quot;, &quot;KGS&quot;, &quot;KHR&quot;, &quot;KMF&quot;, &quot;KRW&quot;, &quot;KYD&quot;, &quot;KZT&quot;, &quot;LAK&quot;, &quot;LBP&quot;, &quot;LKR&quot;, &quot;LRD&quot;, &quot;LSL&quot;, &quot;LTL&quot;, &quot;LVL&quot;, &quot;MAD&quot;, &quot;MDL&quot;, &quot;MGA&quot;, &quot;MKD&quot;, &quot;MNT&quot;, &quot;MOP&quot;, &quot;MRO&quot;, &quot;MUR&quot;, &quot;MVR&quot;, &quot;MWK&quot;, &quot;MXN&quot;, &quot;MYR&quot;, &quot;MZN&quot;, &quot;NAD&quot;, &quot;NGN&quot;, &quot;NIO&quot;, &quot;NOK&quot;, &quot;NPR&quot;, &quot;NZD&quot;, &quot;PAB&quot;, &quot;PEN&quot;, &quot;PGK&quot;, &quot;PHP&quot;, &quot;PKR&quot;, &quot;PLN&quot;, &quot;PYG&quot;, &quot;QAR&quot;, &quot;RON&quot;, &quot;RSD&quot;, &quot;RUB&quot;, &quot;RWF&quot;, &quot;SAR&quot;, &quot;SBD&quot;, &quot;SCR&quot;, &quot;SEK&quot;, &quot;SGD&quot;, &quot;SHP&quot;, &quot;SLL&quot;, &quot;SOS&quot;, &quot;SRD&quot;, &quot;STD&quot;, &quot;SVC&quot;, &quot;SZL&quot;, &quot;THB&quot;, &quot;TJS&quot;, &quot;TOP&quot;, &quot;TRY&quot;, &quot;TTD&quot;, &quot;TWD&quot;, &quot;TZS&quot;, &quot;UAH&quot;, &quot;UGX&quot;, &quot;UYU&quot;, &quot;UZS&quot;, &quot;VND&quot;, &quot;VUV&quot;, &quot;WST&quot;, &quot;XAF&quot;, &quot;XCD&quot;, &quot;XOF&quot;, &quot;XPF&quot;, &quot;YER&quot;, &quot;ZAR&quot;, &quot;ZMW&quot;]" id="payment_methods_stripe" name="invoice[payment_methods_attributes[stripe]]" type="checkbox" value="1" />
+          <label for="payment_methods_stripe" class="wrap">Stripe <span id='stripe_checkbox_error'></span></label>
+      </li>
+
+
+  </ul>
+</p>
+
+
+
+
+  <div id="additional_text_wrap">
+    <div id="additional_text_label">
+      <label for="invoice_comments" class="autogrow_label">
+        Additional Text <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Additional text is added at the bottom of your invoices." />
+      </label>
+    </div>
+
+    <div id="additional_text_action">
+      <a href="#">Edit default additional text</a>
+    </div>
+
+    <textarea class="autogrow" cols="30" id="invoice_comments" name="invoice[comments]" rows="4">
+Default additional text</textarea>
+  </div>
+</fieldset>
+
+<fieldset class="blockf" id="advanced_options_fieldset">
+  <h3 id="options_toggle" class="up">
+    <span class="button"><em>More Options</em></span>
+    <p class="description">Set up payment reminders, thank you emails, discounts and more</p>
+  </h3>
+
+  <div id="advanced_options" style="display:none">
+
+    <p><label for="invoice_emails">Invoice Emails</label></p>
+
+    <ul class="form_list" id="invoice_email_options">
+
+      <li>
+        <input name="invoice[send_new_invoice_emails]" type="hidden" value="0" /><input id="invoice_send_new_invoice_emails" name="invoice[send_new_invoice_emails]" type="checkbox" value="1" />
+        <span id="new_invoice_email_text">Email this invoice automatically using my default template</span>
+        <span id="email_actions" class="sub-info">
+          <span id="edit_email" style="display:none">
+            <a href="#" id="edit_email_link" class="nonudge" style="display:none">Edit</a> or
+          </span>
+          <a href="#" id="reset_email_link" class="nonudge" style="display:none">Reset to Default</a>
+          <a href="#" id="customise_email_link" class="nonudge" style="">Edit email template</a>
+        </span>
+      </li>
+
+      <li>
+        <input name="invoice[send_reminder_emails]" type="hidden" value="0" /><input id="invoice_send_reminder_emails" name="invoice[send_reminder_emails]" type="checkbox" value="1" />
+        Email payment reminders if the invoice goes unpaid
+          <span class="sub-info"><a href="/email_templates/reminders">Edit reminder rules</a></span>
+      </li>
+
+      <li>
+        <input name="invoice[send_thank_you_emails]" type="hidden" value="0" /><input id="invoice_send_thank_you_emails" name="invoice[send_thank_you_emails]" type="checkbox" value="1" />
+        Email a Thank You once this invoice has been paid
+          <span class="sub-info"><a href="/email_templates/thank_you">Edit Thank You email template</a></span>
+      </li>
+
+    </ul>
+
+    <div id="email_form" style="display: none">
+      <input id="invoice_customise_new_invoice_email" name="invoice[customise_new_invoice_email]" type="hidden" />
+
+
+<fieldset class="emailf email_template inline_email">
+
+  <p>
+    <label>From</label><select id="invoice_from" name="invoice[from]"><option value="Nathan Barley &lt;nathan@medianode.com&gt;" selected="selected">Nathan Barley &lt;nathan@medianode.com&gt;</option>
+<option value="Josh Hughes &lt;josh@freeagent.com&gt;">Josh Hughes &lt;josh@freeagent.com&gt;</option>
+<option value="Jingkai He &lt;jingkai@freeagent.com&gt;">Jingkai He &lt;jingkai@freeagent.com&gt;</option>
+<option value="FieldAgent Dummy &lt;mobile@freeagent.com&gt;">FieldAgent Dummy &lt;mobile@freeagent.com&gt;</option>
+<option value="Anup Narkhede &lt;anup@freeagent.com&gt;">Anup Narkhede &lt;anup@freeagent.com&gt;</option>
+<option value="Lindsay McDougall &lt;lindsay@freeagent.com&gt;">Lindsay McDougall &lt;lindsay@freeagent.com&gt;</option>
+<option value="Dane Shanderson &lt;danae@freeagent.com&gt;">Dane Shanderson &lt;danae@freeagent.com&gt;</option>
+<option value="Jessica Adair &lt;jessica@freeagent.com&gt;">Jessica Adair &lt;jessica@freeagent.com&gt;</option>
+<option value="Paul Smith &lt;paul@freeagent.com&gt;">Paul Smith &lt;paul@freeagent.com&gt;</option>
+<option value="Lisa Robb &lt;lisa@freeagent.com&gt;">Lisa Robb &lt;lisa@freeagent.com&gt;</option>
+<option value="Alberto Fernández-Capel &lt;alberto@freeagent.com&gt;">Alberto Fernández-Capel &lt;alberto@freeagent.com&gt;</option>
+<option value="David Pilling &lt;david.pilling@freeagent.com&gt;">David Pilling &lt;david.pilling@freeagent.com&gt;</option>
+<option value="Ceri Shaw &lt;ceri@freeagent.com&gt;">Ceri Shaw &lt;ceri@freeagent.com&gt;</option>
+<option value="Harry Mills &lt;harry@freeagent.com&gt;">Harry Mills &lt;harry@freeagent.com&gt;</option>
+<option value="Derek Russell &lt;derek@freeagent.com&gt;">Derek Russell &lt;derek@freeagent.com&gt;</option>
+<option value="Dan Ashcroft &lt;dan@medianode.com&gt;">Dan Ashcroft &lt;dan@medianode.com&gt;</option>
+<option value="Ned Smanks &lt;ned@medianode.com&gt;">Ned Smanks &lt;ned@medianode.com&gt;</option>
+<option value="Rufus Onslatt &lt;rufus@accountsunlimited.co.uk&gt;">Rufus Onslatt &lt;rufus@accountsunlimited.co.uk&gt;</option>
+<option value="Paddy Duke &lt;paddy@freeagent.com&gt;">Paddy Duke &lt;paddy@freeagent.com&gt;</option>
+<option value="Andy Irvine &lt;andy@freeagent.com&gt;">Andy Irvine &lt;andy@freeagent.com&gt;</option>
+<option value="Irina Bednova &lt;irina@freeagent.com&gt;">Irina Bednova &lt;irina@freeagent.com&gt;</option></select>
+    <span class="form-info">
+      <input name="invoice[email_to_sender]" type="hidden" value="0" /><input class="nonudge" id="invoice_email_to_sender" name="invoice[email_to_sender]" type="checkbox" value="1" /> Email a copy to Sender
+    </span>
+  </p>
+
+  <p>
+    <label>To</label><input id="invoice_to" name="invoice[to]" size="30" type="text" value="[contact_email]" />
+    <span class="form-info">
+      Enter multiple email address separated by a comma.
+    </span>
+  </p>
+
+  <p>
+    <label>Subject</label><input id="invoice_subject" name="invoice[subject]" size="30" type="text" value="Invoice [reference]" />
+  </p>
+
+      <p class="email_attach">
+        MediaNode_Invoice_[reference].pdf
+      </p>
+
+    <div id="email_attachments">
+
+    </div>
+
+
+    <p class="attachment_trigger">
+
+      <a href="/email_attachments/select?emailable_id=58725&amp;emailable_type=EmailTemplate" data-modal-width="620" id="add_attachment_link" rel="modal">
+        Attach Files
+</a>
+
+    </p>
+
+  <div class="emailarea">
+    <div id="wysihtml5_toolbar" style="display: none;">
+  <ul class="commands">
+    <li class="bold" data-wysihtml5-command="bold" title="Make text bold (CTRL+B)"></li>
+    <li class="italic" data-wysihtml5-command="italic" title="Make text italic (CTRL+I)"></li>
+    <li class="unorderedlist" data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list"></li>
+    <li class="orderedlist" data-wysihtml5-command="insertOrderedList" title="Insert an ordered list"></li>
+    <li class="source" data-wysihtml5-action="change_view" title =" Show HTML"></li>
+  </ul>
+</div>
+
+    <textarea class="autogrow wysihtml5" cols="40" id="invoice_body" name="invoice[body]" rows="0">
+<p>Hi [contact_first_name],</p>
+
+<p>Please find attached your latest invoice.</p>
+
+<p>Many thanks,
+<br>Nathan Barley</p>
+
+<p>P.S. I'm using FreeAgent to send my invoices. Get a 10% lifetime discount by signing up here: [referral_link]</p></textarea>
+    <p class="html_help">Supported:
+    <code>&lt;p&gt;</code>
+    <code>&lt;b&gt;</code>
+    <code>&lt;strong&gt;</code>
+    <code>&lt;i&gt;</code>
+    <code>&lt;em&gt;</code>
+    <code>&lt;ul&gt;</code>
+    <code>&lt;ol&gt;</code>
+    <code>&lt;li&gt;</code>
+    <code>&lt;a&gt;</code>
+    <code>&lt;img&gt;</code>
+    <code>&lt;br&gt;</code>
+    <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Supported HTML tags. The &#x27;style&#x27; attribute is supported for these tags. Any other tags are automatically removed when saved" />
+    </p>
+  </div>
+
+</fieldset>
+
+  <div id="macros" class='inline_macros'>
+    <h2 class="handle">Email Tags</h2>
+    <p>Use these tags to insert data into your email templates:</p>
+    <ul id="macro_list">
+        <li id="macro_reference">
+          [reference] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The invoice reference" />
+        </li>
+        <li id="macro_total_value">
+          [total_value] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The total value of the invoice" />
+        </li>
+        <li id="macro_contact_email">
+          [contact_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The primary email address for the contact" />
+        </li>
+        <li id="macro_contact_billing_email">
+          [contact_billing_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The billing email address for the contact" />
+        </li>
+        <li id="macro_billing_or_contact_email">
+          [billing_or_contact_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The billing email for the contact, or the primary email if the billing email has not been set" />
+        </li>
+        <li id="macro_contact_first_name">
+          [contact_first_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The contact&#x27;s first name" />
+        </li>
+        <li id="macro_contact_last_name">
+          [contact_last_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The contact&#x27;s family name" />
+        </li>
+        <li id="macro_project_name">
+          [project_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The name of the project associated with this invoice, if appropriate" />
+        </li>
+        <li id="macro_online_payment_link">
+          [online_payment_link] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="A link for your contact to pay this invoice online" />
+        </li>
+        <li id="macro_invoice_date">
+          [invoice_date] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The date of the invoice" />
+        </li>
+        <li id="macro_due_date">
+          [due_date] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The date on which payment is due for the invoice" />
+        </li>
+        <li id="macro_amount_due">
+          [amount_due] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The outstanding amount left on the invoice" />
+        </li>
+        <li id="macro_referral_link">
+          [referral_link] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Your FreeAgent referral link" />
+        </li>
+    </ul>
+  </div>
+
+    </div>
+
+    <p>
+      <label for="invoice_discount_percent">Invoice Discount (%)</label>
+      <input id="invoice_discount_percent" name="invoice[discount_percent]" size="6" type="text" value="" />
+      <span class="form-info">The discount applied across the whole invoice.</span>
+    </p>
+
+    <p>
+      <label for="invoice_client_contact_name">Client Contact Name</label>
+      <input id="invoice_client_contact_name" name="invoice[client_contact_name]" size="30" type="text" />
+      <span class="form-info">This name will override the default contact name on this invoice</span>
+    </p>
+
+    <p>
+      <label for="invoice_payment_terms">Custom Payment Terms</label>
+      <input id="invoice_payment_terms" name="invoice[payment_terms]" size="30" type="text" />
+      <span class="form-info">This will override the normal payment terms and invoice due date.</span>
+    </p>
+
+      <p>
+        <label for="invoice_bank_account_id">Bank account</label>
+        <select id="invoice_bank_account_id" name="invoice[bank_account_id]"><option value="324413" data-currency="GBP">Business Current Account</option>
+<option value="324414" data-currency="GBP">Business Savings Account</option>
+<option value="324415" data-currency="GBP">Petty Cash Account</option>
+<option value="324416" data-currency="GBP">Business Loan account</option>
+<option value="331425" data-currency="NZD">Kiwi Banking Group</option>
+<option value="332373" data-currency="GBP">Personal Account</option>
+<option value="336589" data-currency="GBP">Empty empty account</option></select>
+        <span class="form-info">This will be used to display remittance advice on recurred invoices.</span>
+      </p>
+
+    <p>
+      <label for="invoice_omit_header">Use Letterheaded Paper?</label>
+      <input name="invoice[omit_header]" type="hidden" value="0" /><input id="invoice_omit_header" name="invoice[omit_header]" type="checkbox" value="1" />
+      <span class="form-info inline">Your logo and company address will be omitted.</span>
+    </p>
+
+    <p>
+      <label for="show_project_name">Display Project Name</label>
+      <input name="invoice[show_project_name]" type="hidden" value="0" /><input id="invoice_show_project_name" name="invoice[show_project_name]" type="checkbox" value="1" />
+      <span class="form-info inline">Display the project name in the Other Information section</span>
+    </p>
+
+    <p>
+      <label for="always_show_bic_and_iban">Always show BIC and IBAN</label>
+      <input name="invoice[always_show_bic_and_iban]" type="hidden" value="0" /><input id="invoice_always_show_bic_and_iban" name="invoice[always_show_bic_and_iban]" type="checkbox" value="1" />
+      <span class="form-info inline">Always display the BIC and IBAN numbers, if defined, on this invoice</span>
+    </p>
+
+
+  <p id="ec_status_options" class="sales_tax"><label for="expense_ec_status">EC Status</label>
+    <span class="stacked_radio_buttons">
+      <input checked="checked" id="ec_status_non_ec" name="invoice[ec_status]" type="radio" value="" />
+      <label class="inline" for="ec_status_non_ec">UK/Non-EC</label>
+      <br />
+      <input id="ec_status_goods" name="invoice[ec_status]" type="radio" value="2" />
+      <label class="inline" for="ec_status_goods">EC Goods</label>
+      <br />
+      <input id="ec_status_services" name="invoice[ec_status]" type="radio" value="1" />
+      <label class="inline" for="ec_status_services">EC Services</label>
+      <br />
+        <input class="can_be_moss" id="ec_status_moss" name="invoice[ec_status]" type="radio" value="3" />
+        <label class="inline can_be_moss" for="ec_status_moss">EC VAT MOSS</label>
+        <br class="can_be_moss" />
+      <span class="form-info">Select the appropriate status for VAT reporting purposes. <br/>
+        For more information, see our <a href="http://www.freeagent.com/support/kb/banking/money-to-or-from-the-eu" class="kb_link_tracking kb_link" data-event-module-name="recurring_invoices" data-link-clicked-event="link clicked">knowledge base article</a>.</span>
+    </span>
+  </p>
+  <p id="moss_status_options">
+    <label for="invoice_place_of_supply">Place of Supply</label>
+    <select id="invoice_place_of_supply" name="invoice[place_of_supply]"><option value="">Please select</option>
+<option value="Austria">Austria</option>
+<option value="Belgium">Belgium</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Croatia">Croatia</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Estonia">Estonia</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Greece">Greece</option>
+<option value="Hungary">Hungary</option>
+<option value="Ireland">Ireland</option>
+<option value="Italy">Italy</option>
+<option value="Latvia">Latvia</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Malta">Malta</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Romania">Romania</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Spain">Spain</option>
+<option value="Sweden">Sweden</option></select>
+  </p>
+
+  </div>
+</fieldset>
+
+      <p class="submitarea">
+        <input name="commit" type="submit" value="Create New Profile" />
+        <a href="https://medianode.freeagent.com/invoices/recurring">Cancel</a>
+        <span class="form-info submitarea_note">Invoice items are added during the next step</span>
+      </p>
+</form>    <div id="additional_text_dialog" title="Default additional text for invoices">
+  <p>This text will appear on all future invoices, unless manually edited.</p>
+  <form accept-charset="UTF-8" action="/invoices/additional_text" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="C0FaakfGGZ/pwy4kaomAXSrnjVyJUr3cfVU2xS2rpq8=" /></div>
+    <textarea class="autogrow" id="additional_text" name="additional_text" rows="6">
+Default additional text</textarea>
+    <p>
+      <input class="submitbut" name="commit" type="submit" value="Save" />
+      <a href="#" id="additional_text_close">Cancel</a>
+    </p>
+  </form>
+</div>
+  </div>
+</section>
+
+
+    </section>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+  <div id="footer_content">
+
+
+    <ul id="support_channels">
+      <li id="knowledge_base">
+        <h3>
+          <a href="/kb_modal" id="kb_modal_link">Knowledge Base</a>
+        </h3>
+        <p>Packed with articles, tutorials and video guides</p>
+      </li>
+      <li id="customer_support">
+        <h3>
+          <a href="http://www.freeagent.com/support" class="external-link" target="_blank">Customer Support</a>
+        </h3>
+        <p>Our superhero support team <a href="mailto:support@freeagent.com">support@freeagent.com</a></p>
+      </li>
+      <li id="community_discussion">
+        <h3>
+          <a href="http://community.freeagent.com/freeagent" class="external-link" target="_blank">Community Discussion</a>
+        </h3>
+        <p>Discuss your ideas, questions and issues in our user forum</p>
+      </li>
+    </ul>
+
+    <div id="things_we_have_to_say_so_we_dont_get_sued">
+      <a href="http://www.freeagent.com/" id="freeagent_logotype" title="Visit the FreeAgent website">FreeAgent</a>
+      <ul>
+        <li>
+          <a href="http://www.freeagent.com/privacy" class="external-link">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="http://www.freeagent.com/terms" class="external-link">Terms of Service</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<link href="css/prototype_notes.css" media="all" rel="stylesheet" type="text/css">
+<script src="css/prototype_notes.js" type="text/javascript"></script>
+<div class="prototype_note">
+  <h3>Step 8 <span style="font-weight:normal;">Set up recurring invoice profile</span></h3>
+  <div class="prototype_note_content">
+    <p>Notes...</p>
+  </div>
+</div>
+<div class="prototype_linked">
+  <a href="index9.html">►</a>
+</div>
+
+</body>
+</html>
