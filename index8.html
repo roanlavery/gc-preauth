@@ -382,6 +382,181 @@
   </ul>
 </p>
 
+<p><label for="invoice_emails">Invoice Emails</label></p>
+
+<ul class="form_list" id="invoice_email_options">
+
+  <li>
+    <input name="invoice[send_new_invoice_emails]" type="hidden" value="0" /><input id="invoice_send_new_invoice_emails" name="invoice[send_new_invoice_emails]" type="checkbox" value="1" />
+    <span id="new_invoice_email_text">Email this invoice automatically using my default template</span>
+    <span id="email_actions" class="sub-info">
+      <span id="edit_email" style="display:none">
+        <a href="#" id="edit_email_link" class="nonudge" style="display:none">Edit</a> or
+      </span>
+      <a href="#" id="reset_email_link" class="nonudge" style="display:none">Reset to Default</a>
+      <a href="#" id="customise_email_link" class="nonudge" style="">Edit email template</a>
+    </span>
+  </li>
+
+  <li>
+    <input name="invoice[send_reminder_emails]" type="hidden" value="0" /><input id="invoice_send_reminder_emails" name="invoice[send_reminder_emails]" type="checkbox" value="1" />
+    Email payment reminders if the invoice goes unpaid
+      <span class="sub-info"><a href="/email_templates/reminders">Edit reminder rules</a></span>
+  </li>
+
+  <li>
+    <input name="invoice[send_thank_you_emails]" type="hidden" value="0" /><input id="invoice_send_thank_you_emails" name="invoice[send_thank_you_emails]" type="checkbox" value="1" />
+    Email a Thank You once this invoice has been paid
+      <span class="sub-info"><a href="/email_templates/thank_you">Edit Thank You email template</a></span>
+  </li>
+
+</ul>
+
+<div id="email_form" style="display: none">
+  <input id="invoice_customise_new_invoice_email" name="invoice[customise_new_invoice_email]" type="hidden" />
+
+
+<fieldset class="emailf email_template inline_email">
+
+<p>
+<label>From</label><select id="invoice_from" name="invoice[from]"><option value="Nathan Barley &lt;nathan@medianode.com&gt;" selected="selected">Nathan Barley &lt;nathan@medianode.com&gt;</option>
+<option value="Josh Hughes &lt;josh@freeagent.com&gt;">Josh Hughes &lt;josh@freeagent.com&gt;</option>
+<option value="Jingkai He &lt;jingkai@freeagent.com&gt;">Jingkai He &lt;jingkai@freeagent.com&gt;</option>
+<option value="FieldAgent Dummy &lt;mobile@freeagent.com&gt;">FieldAgent Dummy &lt;mobile@freeagent.com&gt;</option>
+<option value="Anup Narkhede &lt;anup@freeagent.com&gt;">Anup Narkhede &lt;anup@freeagent.com&gt;</option>
+<option value="Lindsay McDougall &lt;lindsay@freeagent.com&gt;">Lindsay McDougall &lt;lindsay@freeagent.com&gt;</option>
+<option value="Dane Shanderson &lt;danae@freeagent.com&gt;">Dane Shanderson &lt;danae@freeagent.com&gt;</option>
+<option value="Jessica Adair &lt;jessica@freeagent.com&gt;">Jessica Adair &lt;jessica@freeagent.com&gt;</option>
+<option value="Paul Smith &lt;paul@freeagent.com&gt;">Paul Smith &lt;paul@freeagent.com&gt;</option>
+<option value="Lisa Robb &lt;lisa@freeagent.com&gt;">Lisa Robb &lt;lisa@freeagent.com&gt;</option>
+<option value="Alberto Fernández-Capel &lt;alberto@freeagent.com&gt;">Alberto Fernández-Capel &lt;alberto@freeagent.com&gt;</option>
+<option value="David Pilling &lt;david.pilling@freeagent.com&gt;">David Pilling &lt;david.pilling@freeagent.com&gt;</option>
+<option value="Ceri Shaw &lt;ceri@freeagent.com&gt;">Ceri Shaw &lt;ceri@freeagent.com&gt;</option>
+<option value="Harry Mills &lt;harry@freeagent.com&gt;">Harry Mills &lt;harry@freeagent.com&gt;</option>
+<option value="Derek Russell &lt;derek@freeagent.com&gt;">Derek Russell &lt;derek@freeagent.com&gt;</option>
+<option value="Dan Ashcroft &lt;dan@medianode.com&gt;">Dan Ashcroft &lt;dan@medianode.com&gt;</option>
+<option value="Ned Smanks &lt;ned@medianode.com&gt;">Ned Smanks &lt;ned@medianode.com&gt;</option>
+<option value="Rufus Onslatt &lt;rufus@accountsunlimited.co.uk&gt;">Rufus Onslatt &lt;rufus@accountsunlimited.co.uk&gt;</option>
+<option value="Paddy Duke &lt;paddy@freeagent.com&gt;">Paddy Duke &lt;paddy@freeagent.com&gt;</option>
+<option value="Andy Irvine &lt;andy@freeagent.com&gt;">Andy Irvine &lt;andy@freeagent.com&gt;</option>
+<option value="Irina Bednova &lt;irina@freeagent.com&gt;">Irina Bednova &lt;irina@freeagent.com&gt;</option></select>
+<span class="form-info">
+  <input name="invoice[email_to_sender]" type="hidden" value="0" /><input class="nonudge" id="invoice_email_to_sender" name="invoice[email_to_sender]" type="checkbox" value="1" /> Email a copy to Sender
+</span>
+</p>
+
+<p>
+<label>To</label><input id="invoice_to" name="invoice[to]" size="30" type="text" value="[contact_email]" />
+<span class="form-info">
+  Enter multiple email address separated by a comma.
+</span>
+</p>
+
+<p>
+<label>Subject</label><input id="invoice_subject" name="invoice[subject]" size="30" type="text" value="Invoice [reference]" />
+</p>
+
+  <p class="email_attach">
+    MediaNode_Invoice_[reference].pdf
+  </p>
+
+<div id="email_attachments">
+
+</div>
+
+
+<p class="attachment_trigger">
+
+  <a href="/email_attachments/select?emailable_id=58725&amp;emailable_type=EmailTemplate" data-modal-width="620" id="add_attachment_link" rel="modal">
+    Attach Files
+</a>
+
+</p>
+
+<div class="emailarea">
+<div id="wysihtml5_toolbar" style="display: none;">
+<ul class="commands">
+<li class="bold" data-wysihtml5-command="bold" title="Make text bold (CTRL+B)"></li>
+<li class="italic" data-wysihtml5-command="italic" title="Make text italic (CTRL+I)"></li>
+<li class="unorderedlist" data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list"></li>
+<li class="orderedlist" data-wysihtml5-command="insertOrderedList" title="Insert an ordered list"></li>
+<li class="source" data-wysihtml5-action="change_view" title =" Show HTML"></li>
+</ul>
+</div>
+
+<textarea class="autogrow wysihtml5" cols="40" id="invoice_body" name="invoice[body]" rows="0">
+<p>Hi [contact_first_name],</p>
+
+<p>Please find attached your latest invoice.</p>
+
+<p>Many thanks,
+<br>Nathan Barley</p>
+
+<p>P.S. I'm using FreeAgent to send my invoices. Get a 10% lifetime discount by signing up here: [referral_link]</p></textarea>
+<p class="html_help">Supported:
+<code>&lt;p&gt;</code>
+<code>&lt;b&gt;</code>
+<code>&lt;strong&gt;</code>
+<code>&lt;i&gt;</code>
+<code>&lt;em&gt;</code>
+<code>&lt;ul&gt;</code>
+<code>&lt;ol&gt;</code>
+<code>&lt;li&gt;</code>
+<code>&lt;a&gt;</code>
+<code>&lt;img&gt;</code>
+<code>&lt;br&gt;</code>
+<img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Supported HTML tags. The &#x27;style&#x27; attribute is supported for these tags. Any other tags are automatically removed when saved" />
+</p>
+</div>
+
+</fieldset>
+
+<div id="macros" class='inline_macros'>
+<h2 class="handle">Email Tags</h2>
+<p>Use these tags to insert data into your email templates:</p>
+<ul id="macro_list">
+    <li id="macro_reference">
+      [reference] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The invoice reference" />
+    </li>
+    <li id="macro_total_value">
+      [total_value] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The total value of the invoice" />
+    </li>
+    <li id="macro_contact_email">
+      [contact_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The primary email address for the contact" />
+    </li>
+    <li id="macro_contact_billing_email">
+      [contact_billing_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The billing email address for the contact" />
+    </li>
+    <li id="macro_billing_or_contact_email">
+      [billing_or_contact_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The billing email for the contact, or the primary email if the billing email has not been set" />
+    </li>
+    <li id="macro_contact_first_name">
+      [contact_first_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The contact&#x27;s first name" />
+    </li>
+    <li id="macro_contact_last_name">
+      [contact_last_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The contact&#x27;s family name" />
+    </li>
+    <li id="macro_project_name">
+      [project_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The name of the project associated with this invoice, if appropriate" />
+    </li>
+    <li id="macro_online_payment_link">
+      [online_payment_link] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="A link for your contact to pay this invoice online" />
+    </li>
+    <li id="macro_invoice_date">
+      [invoice_date] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The date of the invoice" />
+    </li>
+    <li id="macro_due_date">
+      [due_date] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The date on which payment is due for the invoice" />
+    </li>
+    <li id="macro_amount_due">
+      [amount_due] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The outstanding amount left on the invoice" />
+    </li>
+    <li id="macro_referral_link">
+      [referral_link] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Your FreeAgent referral link" />
+    </li>
+</ul>
+</div></div>
+
 
 
 
@@ -409,182 +584,9 @@ Default additional text</textarea>
 
   <div id="advanced_options" style="display:none">
 
-    <p><label for="invoice_emails">Invoice Emails</label></p>
-
-    <ul class="form_list" id="invoice_email_options">
-
-      <li>
-        <input name="invoice[send_new_invoice_emails]" type="hidden" value="0" /><input id="invoice_send_new_invoice_emails" name="invoice[send_new_invoice_emails]" type="checkbox" value="1" />
-        <span id="new_invoice_email_text">Email this invoice automatically using my default template</span>
-        <span id="email_actions" class="sub-info">
-          <span id="edit_email" style="display:none">
-            <a href="#" id="edit_email_link" class="nonudge" style="display:none">Edit</a> or
-          </span>
-          <a href="#" id="reset_email_link" class="nonudge" style="display:none">Reset to Default</a>
-          <a href="#" id="customise_email_link" class="nonudge" style="">Edit email template</a>
-        </span>
-      </li>
-
-      <li>
-        <input name="invoice[send_reminder_emails]" type="hidden" value="0" /><input id="invoice_send_reminder_emails" name="invoice[send_reminder_emails]" type="checkbox" value="1" />
-        Email payment reminders if the invoice goes unpaid
-          <span class="sub-info"><a href="/email_templates/reminders">Edit reminder rules</a></span>
-      </li>
-
-      <li>
-        <input name="invoice[send_thank_you_emails]" type="hidden" value="0" /><input id="invoice_send_thank_you_emails" name="invoice[send_thank_you_emails]" type="checkbox" value="1" />
-        Email a Thank You once this invoice has been paid
-          <span class="sub-info"><a href="/email_templates/thank_you">Edit Thank You email template</a></span>
-      </li>
-
-    </ul>
-
-    <div id="email_form" style="display: none">
-      <input id="invoice_customise_new_invoice_email" name="invoice[customise_new_invoice_email]" type="hidden" />
 
 
-<fieldset class="emailf email_template inline_email">
 
-  <p>
-    <label>From</label><select id="invoice_from" name="invoice[from]"><option value="Nathan Barley &lt;nathan@medianode.com&gt;" selected="selected">Nathan Barley &lt;nathan@medianode.com&gt;</option>
-<option value="Josh Hughes &lt;josh@freeagent.com&gt;">Josh Hughes &lt;josh@freeagent.com&gt;</option>
-<option value="Jingkai He &lt;jingkai@freeagent.com&gt;">Jingkai He &lt;jingkai@freeagent.com&gt;</option>
-<option value="FieldAgent Dummy &lt;mobile@freeagent.com&gt;">FieldAgent Dummy &lt;mobile@freeagent.com&gt;</option>
-<option value="Anup Narkhede &lt;anup@freeagent.com&gt;">Anup Narkhede &lt;anup@freeagent.com&gt;</option>
-<option value="Lindsay McDougall &lt;lindsay@freeagent.com&gt;">Lindsay McDougall &lt;lindsay@freeagent.com&gt;</option>
-<option value="Dane Shanderson &lt;danae@freeagent.com&gt;">Dane Shanderson &lt;danae@freeagent.com&gt;</option>
-<option value="Jessica Adair &lt;jessica@freeagent.com&gt;">Jessica Adair &lt;jessica@freeagent.com&gt;</option>
-<option value="Paul Smith &lt;paul@freeagent.com&gt;">Paul Smith &lt;paul@freeagent.com&gt;</option>
-<option value="Lisa Robb &lt;lisa@freeagent.com&gt;">Lisa Robb &lt;lisa@freeagent.com&gt;</option>
-<option value="Alberto Fernández-Capel &lt;alberto@freeagent.com&gt;">Alberto Fernández-Capel &lt;alberto@freeagent.com&gt;</option>
-<option value="David Pilling &lt;david.pilling@freeagent.com&gt;">David Pilling &lt;david.pilling@freeagent.com&gt;</option>
-<option value="Ceri Shaw &lt;ceri@freeagent.com&gt;">Ceri Shaw &lt;ceri@freeagent.com&gt;</option>
-<option value="Harry Mills &lt;harry@freeagent.com&gt;">Harry Mills &lt;harry@freeagent.com&gt;</option>
-<option value="Derek Russell &lt;derek@freeagent.com&gt;">Derek Russell &lt;derek@freeagent.com&gt;</option>
-<option value="Dan Ashcroft &lt;dan@medianode.com&gt;">Dan Ashcroft &lt;dan@medianode.com&gt;</option>
-<option value="Ned Smanks &lt;ned@medianode.com&gt;">Ned Smanks &lt;ned@medianode.com&gt;</option>
-<option value="Rufus Onslatt &lt;rufus@accountsunlimited.co.uk&gt;">Rufus Onslatt &lt;rufus@accountsunlimited.co.uk&gt;</option>
-<option value="Paddy Duke &lt;paddy@freeagent.com&gt;">Paddy Duke &lt;paddy@freeagent.com&gt;</option>
-<option value="Andy Irvine &lt;andy@freeagent.com&gt;">Andy Irvine &lt;andy@freeagent.com&gt;</option>
-<option value="Irina Bednova &lt;irina@freeagent.com&gt;">Irina Bednova &lt;irina@freeagent.com&gt;</option></select>
-    <span class="form-info">
-      <input name="invoice[email_to_sender]" type="hidden" value="0" /><input class="nonudge" id="invoice_email_to_sender" name="invoice[email_to_sender]" type="checkbox" value="1" /> Email a copy to Sender
-    </span>
-  </p>
-
-  <p>
-    <label>To</label><input id="invoice_to" name="invoice[to]" size="30" type="text" value="[contact_email]" />
-    <span class="form-info">
-      Enter multiple email address separated by a comma.
-    </span>
-  </p>
-
-  <p>
-    <label>Subject</label><input id="invoice_subject" name="invoice[subject]" size="30" type="text" value="Invoice [reference]" />
-  </p>
-
-      <p class="email_attach">
-        MediaNode_Invoice_[reference].pdf
-      </p>
-
-    <div id="email_attachments">
-
-    </div>
-
-
-    <p class="attachment_trigger">
-
-      <a href="/email_attachments/select?emailable_id=58725&amp;emailable_type=EmailTemplate" data-modal-width="620" id="add_attachment_link" rel="modal">
-        Attach Files
-</a>
-
-    </p>
-
-  <div class="emailarea">
-    <div id="wysihtml5_toolbar" style="display: none;">
-  <ul class="commands">
-    <li class="bold" data-wysihtml5-command="bold" title="Make text bold (CTRL+B)"></li>
-    <li class="italic" data-wysihtml5-command="italic" title="Make text italic (CTRL+I)"></li>
-    <li class="unorderedlist" data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list"></li>
-    <li class="orderedlist" data-wysihtml5-command="insertOrderedList" title="Insert an ordered list"></li>
-    <li class="source" data-wysihtml5-action="change_view" title =" Show HTML"></li>
-  </ul>
-</div>
-
-    <textarea class="autogrow wysihtml5" cols="40" id="invoice_body" name="invoice[body]" rows="0">
-<p>Hi [contact_first_name],</p>
-
-<p>Please find attached your latest invoice.</p>
-
-<p>Many thanks,
-<br>Nathan Barley</p>
-
-<p>P.S. I'm using FreeAgent to send my invoices. Get a 10% lifetime discount by signing up here: [referral_link]</p></textarea>
-    <p class="html_help">Supported:
-    <code>&lt;p&gt;</code>
-    <code>&lt;b&gt;</code>
-    <code>&lt;strong&gt;</code>
-    <code>&lt;i&gt;</code>
-    <code>&lt;em&gt;</code>
-    <code>&lt;ul&gt;</code>
-    <code>&lt;ol&gt;</code>
-    <code>&lt;li&gt;</code>
-    <code>&lt;a&gt;</code>
-    <code>&lt;img&gt;</code>
-    <code>&lt;br&gt;</code>
-    <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Supported HTML tags. The &#x27;style&#x27; attribute is supported for these tags. Any other tags are automatically removed when saved" />
-    </p>
-  </div>
-
-</fieldset>
-
-  <div id="macros" class='inline_macros'>
-    <h2 class="handle">Email Tags</h2>
-    <p>Use these tags to insert data into your email templates:</p>
-    <ul id="macro_list">
-        <li id="macro_reference">
-          [reference] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The invoice reference" />
-        </li>
-        <li id="macro_total_value">
-          [total_value] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The total value of the invoice" />
-        </li>
-        <li id="macro_contact_email">
-          [contact_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The primary email address for the contact" />
-        </li>
-        <li id="macro_contact_billing_email">
-          [contact_billing_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The billing email address for the contact" />
-        </li>
-        <li id="macro_billing_or_contact_email">
-          [billing_or_contact_email] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The billing email for the contact, or the primary email if the billing email has not been set" />
-        </li>
-        <li id="macro_contact_first_name">
-          [contact_first_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The contact&#x27;s first name" />
-        </li>
-        <li id="macro_contact_last_name">
-          [contact_last_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The contact&#x27;s family name" />
-        </li>
-        <li id="macro_project_name">
-          [project_name] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The name of the project associated with this invoice, if appropriate" />
-        </li>
-        <li id="macro_online_payment_link">
-          [online_payment_link] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="A link for your contact to pay this invoice online" />
-        </li>
-        <li id="macro_invoice_date">
-          [invoice_date] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The date of the invoice" />
-        </li>
-        <li id="macro_due_date">
-          [due_date] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The date on which payment is due for the invoice" />
-        </li>
-        <li id="macro_amount_due">
-          [amount_due] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="The outstanding amount left on the invoice" />
-        </li>
-        <li id="macro_referral_link">
-          [referral_link] <img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Your FreeAgent referral link" />
-        </li>
-    </ul>
-  </div>
-
-    </div>
 
     <p>
       <label for="invoice_discount_percent">Invoice Discount (%)</label>

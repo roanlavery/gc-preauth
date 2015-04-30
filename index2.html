@@ -37,7 +37,7 @@
             <link href="https://staticly.global.ssl.fastly.net/assets/talaria/ie-fda58def5914cbe67732cbbe541cec09.css" media="screen" rel="stylesheet" type="text/css" />
             <![endif]--><!--[if lt IE 9]><script src="https://staticly.global.ssl.fastly.net/assets/html5-5be67f5eeb052b5737c7f57577fdf13f.js" type="text/javascript"></script><![endif]--><script src="https://staticly.global.ssl.fastly.net/assets/talaria-34715abc9f43c9cbac265bda30ccba99.js" type="text/javascript"></script><script src="https://staticly.global.ssl.fastly.net/assets/talaria/highcharts-1b1911eaeac4103e8eedcb7846507116.js" type="text/javascript"></script>
           </head>
-          <body class="meta">
+          <body class="">
             <div id="wrapper">
               <div id="sidebar_saviour"></div>
               <div class="app_header_wrapper">
@@ -120,76 +120,54 @@
                   <div id="contents">
                     <div id="primary_content_wrapper">
                       <section id="primary_content">
-                        <form accept-charset="UTF-8" action="index3.html" class="edit_email_template" id="edit_email_template_58724" method="post">
-                          <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="JZ/x3rR74+xMaImUObvP8YYLzl8fa8HzkrHcsQ+fNrg=" /></div>
-                          <input id="email_template_template_type" name="email_template[template_type]" type="hidden" value="thank_you" />
-                          <fieldset class="blockf email_template ">
-                            <p>
-                              <label for="contact_sales_tax_registration_number">Client contact</label>
-                            <input type="text" value="johnny@clientname.com" size="30" />
-                            </p>
-                            <p>
-                              <label for="contact_sales_tax_registration_number">Max allowance <span style="padding-left: 0.5em">£</span></label>
-                              <input id="contact_sales_tax_registration_number" name="contact[sales_tax_registration_number]" size="10" type="text">
-                                <label for="contact_charge_sales_tax" style="display: inline; float: none">every</label>
-                                <select id="contact_charge_sales_tax" name="contact[charge_sales_tax]">
-                                  <option value="1" selected="selected">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                </select>
-                                <select id="contact_charge_sales_tax" name="contact[charge_sales_tax]">
-                                  <option value="-1" selected="selected">Months</option>
-                                  <option value="1">Weeks</option>
-                                </select>
-                                <!--until
-                                <span class="date_input " role="date_input" style="vertical-align:middle;"><input data-date-format="%d %b %y" id="journal_set_dated_on" name="journal_set[dated_on]" size="8" type="text" value="22 Apr 15"><span class="date_input_picker"><span class="calendar_image"></span></span></span>-->
-                            </p>
 
-                            <p class="submitarea"><input name="commit" type="submit" value="Send Request" /><a href="/settings/index">Cancel</a></p>
-                          </fieldset>
-                        <!--  <fieldset class="emailf email_template ">
-                            <div class="emailarea">
-                              <div id="wysihtml5_toolbar" style="display: none;">
-                                <ul class="commands">
-                                  <li class="bold" data-wysihtml5-command="bold" title="Make text bold (CTRL+B)"></li>
-                                  <li class="italic" data-wysihtml5-command="italic" title="Make text italic (CTRL+I)"></li>
-                                  <li class="unorderedlist" data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list"></li>
-                                  <li class="orderedlist" data-wysihtml5-command="insertOrderedList" title="Insert an ordered list"></li>
-                                  <li class="source" data-wysihtml5-action="change_view" title =" Show HTML"></li>
-                                </ul>
-                              </div>
-                              <textarea class="autogrow wysihtml5" cols="40" id="email_template_body" name="email_template[body]" rows="0">
-                                <p>Hi [contact_first_name],</p>
-                                <p>To make life a bit easier...</p>
-                                <p>Many thanks,<br/>
-                                Josh Hughes<br/><br/></p></textarea>
-                              <p class="html_help">Supported:
-                                <code>&lt;p&gt;</code><code>&lt;b&gt;</code><code>&lt;strong&gt;</code><code>&lt;i&gt;</code><code>&lt;em&gt;</code><code>&lt;ul&gt;</code><code>&lt;ol&gt;</code><code>&lt;li&gt;</code><code>&lt;a&gt;</code><code>&lt;img&gt;</code><code>&lt;br&gt;</code><img alt="tooltip" class="tooltip" src="https://staticly.global.ssl.fastly.net/assets/talaria/application/ttip-f6e116e7243005c3526b2b43cac60c68.png" title="Supported HTML tags. The &#x27;style&#x27; attribute is supported for these tags. Any other tags are automatically removed when saved" />
-                              </p>
-                            </div>
-                          </fieldset> -->
+                        <div class="feature_template basecamp_integration">
+  <div class="feature_details">
 
-                        </form>
+
+      <h3>1. Request the Direct Debit mandate</h3>
+      <p>
+        By setting up a Direct Debit mandate you are requesting authorisation from your client to let you automatically take payments from their bank account.
+      </p>
+      <h3>2. Your client approves the mandate</h3>
+      <p>After sending the request, your client will receive an email asking them to approve the Direct Debit mandate with GoCardless. This allows you to debit their account, up to a <em>maximum of £5000 per month</em>.</p>
+      <h3>3. Take payments when invoicing</h3>
+      <p>You can now select the automatic Direct Debit payment option when creating invoices or recurring invoices.</p>
+      <p><a href="#">Find out more about Direct Debit mandates →</a></p>
+
+  </div>
+  <div style="padding-top:60px">
+
+    <div class="ajax-loading blockf fieldsetspace">
+
+
+      <form accept-charset="UTF-8" action="index3.html" class="edit_email_template" id="edit_email_template_58724" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="JZ/x3rR74+xMaImUObvP8YYLzl8fa8HzkrHcsQ+fNrg=" /></div>
+        <input id="email_template_template_type" name="email_template[template_type]" type="hidden" value="thank_you" />
+        <fieldset class="blockf email_template ">
+          <p><label for="contact_sales_tax_registration_number" style="margin-left:0;padding:0 0 5px 0; width:auto; font-size:1.2em">Client contact</label></p>
+          <p>
+
+          <input type="text" value="johnny@clientname.com" size="30" style="font-size:1.4em; padding:6px; margin-left:0" />
+
+<a href="/settings/basecamp/enable" class="button add">Send Request</a></p>
+
+
+</form>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
                       </section>
                     </div>
-                      <aside id="meta">
-                        <section class="panel">
-                          <header>
-                            <h3 class="title">Direct Debit mandates</h3>
-                          </header>
-                          <div class="panel_content">
-                            <div class="panel_data">
-                              <p>By setting up a Direct Debit mandate with GoCardless you are requesting authorisation from your client to let you automatically take payment from their bank account for invoices.</p>
-                              <p>After sending this request, your client will receive an email asking them to approve the Direct Debit mandate through GoCardless. By approving this request, your client agrees to the maximum amount you can take and how often that amount renews.</p>
 
-                              <p><a href="#"><strong>Find out more about GoCardless Direct Debit mandates →</strong></a></p>
-                            </div>
-                          </div>
-                        </section>
-                      </aside>
-
-                    </aside>
                   </div>
                 </section>
               </section>

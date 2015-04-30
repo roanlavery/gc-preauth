@@ -124,10 +124,10 @@
                               <div class="content">
                                 <ul>
                                   <li><a href="/projects/new?contact_id=3356208">Project</a></li>
-                                  <li><a href="index5.html">Invoice</a></li>
+                                  <li><a href="/invoices/new?contact_id=3356208">Invoice</a></li>
                                   <li><a href="/estimates/new?contact_id=3356208">Estimate</a></li>
                                   <li><a href="/bills/new?contact_id=3356208">Bill</a></li>
-
+                                  <li><a href="index2.html">Direct Debit mandate</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -253,23 +253,6 @@
                           </div>
                         </div>
                       </section>
-                      <section class="panel status">
-                        <header>
-                          <h3 class="title">Direct Debit mandate</h3>
-                        </header>
-                        <div class="panel_content">
-                          <div class="panel_data">
-                            <div class="positive detail">
-                              <h3>Approved</h3>
-                              <h4>Max Allowance</h4>
-                              <p>£1250 every month</p>
-                              <h4>Currently Available</h4>
-                              <p>£1250</p>
-                              <p><a href="#" class="button">Remove mandate</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
                     </aside>
                   </div>
                 </section>
@@ -301,16 +284,56 @@
               </div>
             </footer>
 
+
+            <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable" tabindex="-1" role="dialog" aria-describedby="modal" aria-labelledby="ui-id-1" style="height: auto; width: 720px; top: 320px; left: 511px; display: block;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">Request a Direct Debit mandate
+</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="modal" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 79px; max-height: none; height: auto;"><div class="grid padded">
+  <div class="row">
+    <div class="column" id="rti_submission_form">
+      <form accept-charset="UTF-8" action="/payroll/2016/periods/4/submit" class="form top_aligned " method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="Z0Ez1l1bj1c1gJ9z1uXw7QaPI2zWfIe1VdwiSq9OmNI="></div>
+
+        <fieldset>
+
+        <h2 style="margin-bottom:25px">Direct Debit mandates</h2>
+
+          <p>
+          <label>Client contact</label>
+          <input autocomplete="off" id="fps_submission_gateway_id" name="fps_submission[gateway_id]" size="33" type="text" value="nathan@mediasnode.com">
+          </p>
+
+          <p class="submitarea">
+            <a href="index3.html" class="button add">Send Request</a>
+          <a href="#" class="cancel">Cancel</a>
+          </p>
+        </fieldset>
+</form>    </div>
+    <div class="column" id="rti_submission_guide">
+
+      <p>
+        By setting up a Direct Debit mandate you are requesting authorisation from your client to let you automatically take payments from their bank account.
+      </p>
+
+      <p>After sending the request, your client will receive an email asking them to approve the Direct Debit mandate with GoCardless. This allows you to debit their account, up to a <em>maximum of £5000 per month</em>.</p>
+
+
+      <p><a href="#">Find out more about Direct Debit mandates →</a></p>
+    </div>
+  </div>
+</div>
+</div></div>
+
+
+
+
             <link href="css/prototype_notes.css" media="all" rel="stylesheet" type="text/css">
             <script src="css/prototype_notes.js" type="text/javascript"></script>
             <div class="prototype_note">
-              <h3>Step 4 <span style="font-weight:normal;">Pre-auth approved</span></h3>
+              <h3>Step 1 <span style="font-weight:normal;">Add new > Direct Debit mandate</span></h3>
               <div class="prototype_note_content">
-                <p>Do we need any management of the pre-auth here? Removal/update?</p>
+                <p>To set up pre-auth</p>
               </div>
             </div>
             <div class="prototype_linked">
-              <a href="index5.html">►</a>
+              <a href="index2.html">►</a>
             </div>
 
           </body>
